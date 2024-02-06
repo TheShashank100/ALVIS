@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ALVIS - JARVIS 2.0</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bgColor">
+  <audio autoplay>
+    <source src="watermarked_Ghost_Beatz_All_Rise_background_vocals_3_41.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <header class="header bgColor">
+    <section class="mainTitle">
+      <h1>ALVIS - <cite>JARVIS 2.0</cite></h1>
+    </section>
+    <!-- Navbar -->
+    <section>
+      <div class="nav">
+        <a class="logoo"><img class="logo" src="Images/AlvisLogo.png" alt="Image"></a>
+        <a href="/">Apps</a>
+        <a href="/">Personalization</a>
+        <a href="translate.html">Translation</a>
+        <a id="language">
+          <label for="Language">Language:</label>
+          <select name="Language" id="language">
+            <option value="English" selected>English</option>
+            <option value="Mandarin">Mandarin</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Spanish">Spanish</option>
+          </select>
+        </a>
+        <a href="/logIn.html" target="_blank">Log In</a>
+        <a href="/">Sign Up</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="mySlides">
+      <img class="slideshow-img" src="Images/main1.webp" alt="Feature 1">
+      <p class="main-paragraph-white">Welcome to the future, where as the creator of ALVIS, I cordially welcome you to
+        the cutting edge of electronics. Picture this: You're comfortably watching a video on your smartphone in your
+        room, and suddenly you desire to seamlessly transfer that experience to your laptop. With ALVIS, it's as
+        effortless as a snap of your fingers. The power to switch displays from your phone to your laptop is now at your
+        command. And that's just the beginning. Curious to explore the other extraordinary features?</p>
+      <a class="custom-button" href="#">Find Out More</a> <!-- Hyperlink to a local file (no href provided) -->
+    </div>
+    <div class="mySlides">
+      <img class="slideshow-img" src="Images/main2.webp" alt="Feature 2">
+      <p class="main-paragraph-white">Experience the convenience of hands-free control with ALVIS. Feature 2 paragraph
+        goes here, describing the benefits of voice commands and how ALVIS simplifies tasks through voice interaction.
+      </p>
+      <a class="custom-button" href="https://example.com" target="_blank">Find Out More</a>
+      <!-- Absolute hyperlink to an external website that opens in a new tab -->
+    </div>
+    <div class="mySlides">
+      <img class="slideshow-img" src="Images/main3.webp" alt="Feature 3">
+      <p class="main-paragraph-white">Explore the power of voice commands with ALVIS. Control your devices, access
+        information, and more, all through simple voice commands. Whether it's turning on the lights or getting the
+        latest weather update, ALVIS is here to assist.</p>
+      <a class="custom-button" href="#">Learn More</a> <!-- Hyperlink to a local file (no href provided) -->
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 10000); // Change slide every 6 seconds (adjust as needed)
+    }
+
+    // Function to manually change slides
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+  </script>
+</body>
+
+</html>

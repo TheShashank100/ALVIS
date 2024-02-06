@@ -1,0 +1,17 @@
+.translation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.translation-table th,
+.translation-table td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+.translation-table th {
+  background-color: darkblue;
+}
