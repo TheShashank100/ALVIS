@@ -7,6 +7,61 @@
   <title>ALVIS - JARVIS 2.0</title>
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Your CSS styles here */
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background-color: #f0f0f0; /* Background color */
+    }
+
+    .custom-button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: block;
+      margin: 20px auto;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      width: 20%;
+      border-radius: 10px; /* Border radius */
+      box-shadow: 0px 0px 5px #888; /* Box shadow */
+      text-shadow: 2px 2px 2px #000; /* Text shadow */
+    }
+
+    .custom-button:hover {
+      background-color: #001f4d;
+    }
+
+    .main-paragraph {
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .custom-button {
+        font-size: 16px;
+        width: 40%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .custom-button {
+        font-size: 14px;
+        width: 60%;
+      }
+    }
+
+  </style>
 </head>
 
 <body class="bgColor">
@@ -49,7 +104,7 @@
         room, and suddenly you desire to seamlessly transfer that experience to your laptop. With ALVIS, it's as
         effortless as a snap of your fingers. The power to switch displays from your phone to your laptop is now at your
         command. And that's just the beginning. Curious to explore the other extraordinary features?</p>
-      <a class="custom-button" href="#">Find Out More</a> <!-- Hyperlink to a local file (no href provided) -->
+      <a class="custom-button" href="#">Find Out More</a>
     </div>
     <div class="mySlides">
       <img class="slideshow-img" src="Images/main2.webp" alt="Feature 2">
@@ -57,14 +112,13 @@
         goes here, describing the benefits of voice commands and how ALVIS simplifies tasks through voice interaction.
       </p>
       <a class="custom-button" href="https://example.com" target="_blank">Find Out More</a>
-      <!-- Absolute hyperlink to an external website that opens in a new tab -->
     </div>
     <div class="mySlides">
       <img class="slideshow-img" src="Images/main3.webp" alt="Feature 3">
       <p class="main-paragraph-white">Explore the power of voice commands with ALVIS. Control your devices, access
         information, and more, all through simple voice commands. Whether it's turning on the lights or getting the
         latest weather update, ALVIS is here to assist.</p>
-      <a class="custom-button" href="#">Learn More</a> <!-- Hyperlink to a local file (no href provided) -->
+      <a class="custom-button" href="#">Learn More</a>
     </div>
   </main>
 
@@ -84,7 +138,7 @@
         slideIndex = 1;
       }
       slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 10000); // Change slide every 6 seconds (adjust as needed)
+      setTimeout(showSlides, 10000); // Change slide every 10 seconds (adjust as needed)
     }
 
     // Function to manually change slides
