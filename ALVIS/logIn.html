@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ALVIS - JARVIS 2.0</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+</head>
+
+<body class="body">
+  <!-- Header Section -->
+  <header class="header bgColor">
+    <!-- Main Title -->
+    <section class="mainTitle">
+      <h1>ALVIS - <cite>JARVIS 2.0</cite></h1>
+    </section>
+    <!-- Navbar -->
+    <section>
+      <div class="nav">
+        <a class="logoo"><img class="logo" src="Images/AlvisLogo.png" alt="Image"></a>
+        <a href="/">Apps</a>
+        <a href="/">Personalization</a>
+        <a href="/">Translation</a>
+        <a id="language">
+          <label for="Language">Language:</label>
+          <select name="Language" id="language">
+            <option value="English" selected>English</option>
+            <option value="Mandarin">Mandarin</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Spanish">Spanish</option>
+          </select>
+        </a>
+        <a href="/">Log In</a>
+        <a href="/">Sign Up</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Your HTML form code goes here -->
+    <h2>HTML Forms</h2>
+    <form
+      action="mailto:lkeller@stamfordpublicschools.org?cc=1702500@stamfordpublicschools.org & subject=  Form Data from Shashank Peela"
+      method="post" enctype="text/plain">
+      <fieldset>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="address">Enter your Address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="city">Enter your City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="states">Enter your State: </label>
+        <select name="states" id="states">
+          <option value="Alabama">AL</option>
+          <option value="Alaska">AK</option>
+          <option value="Arizona">AZ</option>
+          <option value="Arkansas">AR</option>
+          <option value="California">CA</option>
+          <option value="Colorado">CO</option>
+          <option value="Connecticut" selected>CT</option>
+          <!-- Add more state options here -->
+        </select><br><br>
+
+        <label for="birthday">Birthday: </label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <Label>Enter your Zip Code: </Label>
+        <input type="number" id="zip" name="zip" placeholder="nnnnn-nnnn"><br><br>
+
+        <label for="fname">Select your favorite genre:</label><br>
+        <input type="checkbox" id="Genre" name="Genre" value="Rap">
+        <label for="Genre1">Rap</label>
+        <input type="checkbox" id="Genre" name="Genre" value="Rock">
+        <label for="Genre2">Rock</label>
+        <input type="checkbox" id="Genre" name="Genre" value="Heavy Metal">
+        <label for="Genre3">Heavy Metal</label>
+        <input type="checkbox" id="Genre" name="Genre" value="Electric">
+        <label for="Genre4">Electric</label>
+        <input type="checkbox" id="Genre" name="Genre" value="Country">
+        <label for="Genre5">Country</label><br><br>
+
+        <label for="Gender">Gender:</label><br>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="prefer_not_to_say" name="Gender" value="Prefer Not to Say">
+        <label for="prefer_not_to_say">Prefer Not to Say</label><br><br>
+
+        <label for="dish">What's your favorite Color?</label>
+        <select name="Color" id="color">
+          <option value="Red">Red</option>
+          <option value="Orange">Orange</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
+          <option value="Indigo">Indigo</option>
+          <option value="Violet">Violet</option>
+          <!-- Add more color options here -->
+        </select><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>What do you think of the homepage of this website?</legend>
+        <br><textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+
+
+        <label for="Forms">Forms</label><br><br>
+        <label for="vol">Rate your experience in this website (1 - 10): </label><br>
+        <input type="range" id="vol" name="vol" min="0" max="10"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer></footer>
+
+  <!-- JavaScript file for your website -->
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
